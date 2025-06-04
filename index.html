@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ColdSip</title>
+  <title>ColdSip Shop</title>
   <link rel="stylesheet" href="style.css"/>
   <script type="module" src="script.js" defer></script>
 </head>
@@ -23,25 +23,7 @@
 
     <div id="shop" class="hidden">
       <h2>Produkte</h2>
-      <div class="product">
-        <img src="flasche-blau.png" alt="ColdSip Bottle"/>
-        <h3>ColdSip Bottle</h3>
-        <label>Farbe:
-          <select id="color">
-            <option>Blau</option>
-            <option>Grün</option>
-            <option>Rot</option>
-          </select>
-        </label>
-        <label>Größe:
-          <select id="size">
-            <option>500ml</option>
-            <option>750ml</option>
-          </select>
-        </label>
-        <p>Preis: <span id="price">19,99 €</span></p>
-        <button id="add-to-cart">In den Warenkorb</button>
-      </div>
+      <div id="product-list"></div>
 
       <h2>Warenkorb</h2>
       <ul id="cart"></ul>
