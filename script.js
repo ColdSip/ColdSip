@@ -79,4 +79,7 @@ window.addToCart = function (id, color, size, price) {
   const li = document.createElement('li')
   li.textContent = itemText
   cartList.appendChild(li)
+
+  // Zähler aktualisieren
+document.getElementById('cart-count').textContent = cart.length
 }
