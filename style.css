@@ -155,3 +155,24 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+/* ===== Animation für Warenkorb-Feedback ===== */
+@keyframes cartPulse {
+  0% {
+    transform: scale(1);
+    background-color: transparent;
+  }
+  50% {
+    transform: scale(1.05);
+    background-color: #d1ecf1;
+  }
+  100% {
+    transform: scale(1);
+    background-color: transparent;
+  }
+}
+
+.cart-pulse {
+  animation: cartPulse 0.5s ease;
+  border-radius: 8px;
+}
+
